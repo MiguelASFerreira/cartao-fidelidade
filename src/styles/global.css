@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+:root {
+    --principal-pink: #D658B3;
+    --principal-green: #45B442;
+
+    --base-gray-700: #332B31;
+    --base-gray-600: #4A4448;
+    --base-gray-500: #756C71;
+    --base-gray-400: #D3CFD2;
+    --base-gray-300: #DFDCDF;
+    --base-gray-200: #E9E7E9;
+    --base-gray-100: #F4F1F2;
+    --base-white: #FFFFFF;
+
+    --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%)
+
+    --font-family: 'Oxygen', sans-serif;
+    --title-md: 700 24px/140% var(--font-family)
+    --title-sm: 700 18px/140% var(--font-family)
+    --subtitle-md: 700 14px/140% var(--font-family)
+    --subtitle-sm: 700 12px/140% var(--font-family)
+    --text-md: 400 16px/140% var(--font-family)
+    --text-sm: 400 14px/140% var(--font-family)
+    --text-xs: 400 12px/140% var(--font-family)
+}
+
+html {
+    font-family: var(--font-family);
+    color: var(--base-gray-500);
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--base-gray-200);
+    overflow-x: hidden;
+}

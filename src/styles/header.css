@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.1rem;
+
+    & img {
+        width: 6.2rem;
+        height: 3rem;
+    }
+
+    & form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--base-gray-400);
+        border: 1px solid var(--base-gray-300);
+        border-radius: 0.75rem;
+        padding: 8px 8px 8px 16px;
+        gap: 12px;
+
+        &:focus-within {
+            border: 1px solid var(--principal-pink);
+        }
+
+        & input {
+            border: none;
+            outline: none;
+            background: inherit;
+            width: 10rem;
+
+            &::placeholder {
+                color: var(--base-gray-500);
+                font: var(--text-md);
+            }
+        }
+
+        & button {
+            border: none;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: var(--base-gray-600);
+            border-radius: 0.5rem;
+
+            & img {
+                width: 1.80rem;
+                height: 1.01rem;
+            }
+
+            &:hover {
+                background-color: var(--base-gray-700);
+            }
+        }
+    }
+}
+
+@media (width >= 62em) {
+    .header {
+        & img {
+            width: 7.25rem;
+            height: 3.625rem;
+        }
+
+        & form {
+            & input {
+                width: 25rem;
+            }
+        }
+    }
+}

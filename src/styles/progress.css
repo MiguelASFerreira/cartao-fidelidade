@@ -1,0 +1,113 @@
+#progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 1.25rem;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  
+    width: 21.9375rem;
+    height: 5.5rem;
+  
+    background: var(--base-gray-100);
+    border: 1px solid var(--base-gray-300);
+    border-radius: 1rem;
+    margin-inline: 0.75rem;
+  
+    & .progress-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      
+  
+      & .progress-text {
+        display: flex;
+        
+
+        & p {
+            & strong {
+                font: var(--title-sm);
+            }
+        }
+
+        & p {
+            font: var(--text-sm);
+        }
+      }
+
+      & .progress-bar {
+        & progress,
+        & progress::-webkit-progress-bar,
+        & progress::-webkit-progress-value {
+            border-radius: 624.93rem;
+        }
+
+        & progress {
+            width: 11.375rem;
+            height: 0.5rem;
+        }
+
+        & progress::-webkit-progress-bar {
+            background: var(--base-gray-300);
+        }
+    
+        & progress::-webkit-progress-value {
+            background: var(--gradient-base);
+        }
+
+        & span {
+            font: var(--text-xs);
+        }
+      }
+    }
+  
+    
+  
+    & .progress-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: var(--base-gray-200);
+        border-radius: 48.5625rem;
+
+        & img {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            filter: drop-shadow(0px 16.25px 6.25px rgba(0, 0, 0, 0.01)) drop-shadow(0px 9.375px 5.625px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3.75px 3.75px rgba(0, 0, 0, 0.07)) drop-shadow(0px 1.25px 2.5px rgba(0, 0, 0, 0.08));
+        }
+    }
+  }
+
+  @media (width >= 62em) {
+    #progress {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+        margin-left: 2rem;
+        gap: 4.5rem;
+        width: 35.5rem;
+        height: 7.313rem;
+
+        & .progress-content {
+            & .progress-bar {
+                & progress {
+                    width: 21.9375rem;
+                    height: 0.5rem;
+                }
+            }
+        }
+
+        & .progress-item {
+            width: 4.5rem;
+            height: 4.5rem;
+            
+            & img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+  }

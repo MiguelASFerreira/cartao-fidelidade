@@ -89,12 +89,12 @@
         margin-left: 2rem;
         gap: 4.5rem;
         width: 35.5rem;
-        height: 7.313rem;
+        height: 6.3rem;
 
         & .progress-content {
             & .progress-bar {
                 & progress {
-                    width: 21.9375rem;
+                    width: 20.9375rem;
                     height: 0.5rem;
                 }
             }

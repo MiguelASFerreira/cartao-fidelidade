@@ -46,3 +46,16 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+@media (width >= 62em) {
+    main {
+        display: grid;
+        align-items: start;
+        align-content: stretch;
+        grid-template-columns: 20rem 35.5rem;
+        grid-template-rows: 5.625rem 1fr 7.313rem;
+
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+}

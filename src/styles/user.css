@@ -43,6 +43,12 @@
             font: var(--title-xs);
         }
     }
-
 }
+
+@media (min-width: 62em) {
+    #user {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+  }
 

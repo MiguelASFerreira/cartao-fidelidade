@@ -47,6 +47,10 @@ main {
     align-items: center;
 }
 
+ul[role="list"] {
+    list-style: none;
+}
+
 @media (width >= 62em) {
     main {
         display: grid;

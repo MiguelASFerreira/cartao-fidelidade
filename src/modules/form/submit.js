@@ -3,6 +3,7 @@ import { toastError, toastSucess } from '../../utils/toast.js'
 import { cardHistory } from '../card/card-history.js'
 
 import { cardShowUser } from '../card/card-info.js'
+import { cardLoyalty } from '../card/card-loyalty.js'
 
 const form = document.querySelector("form")
 const idCard = document.getElementById("id-card")
@@ -21,8 +22,10 @@ form.addEventListener("submit", async (event) => {
         }
 
         const { data } = await api.get(`/clients/${id}`)
+
         cardShowUser({ user: data})
         cardHistory({historys: data.appointmentHistory})
+        cardLoyalty({id: data.id, loyaltyCard: data.loyaltyCard })
 
         welcomeSection.style.display = 'none'
         mainContent.style.display = 'grid'

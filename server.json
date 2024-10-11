@@ -95,12 +95,32 @@
                 {
                     "date": "20/12/2023",
                     "time": "15:15"
+                },
+                {
+                    "date": "24/01/2024",
+                    "time": "17:45"
+                },
+                {
+                    "date": "24/01/2024",
+                    "time": "17:45"
+                },
+                {
+                    "date": "24/01/2024",
+                    "time": "17:45"
+                },
+                {
+                    "date": "24/01/2024",
+                    "time": "17:45"
+                },
+                {
+                    "date": "24/01/2024",
+                    "time": "17:45"
                 }
             ],
             "loyaltyCard": {
-                "totalCuts": 5,
-                "cutsNeeded": 8,
-                "cutsRemaining": 3
+                "totalCuts": 10,
+                "cutsNeeded": 10,
+                "cutsRemaining": 5
             }
         }
     ]

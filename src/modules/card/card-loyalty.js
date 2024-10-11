@@ -18,16 +18,16 @@ export function cardLoyalty({ id, loyaltyCard }) {
                 const pointItem = document.createElement("li")
                 pointItem.classList.add("item-check")
 
-                if (i < totalCuts) {
-                    const pointImage = document.createElement("img")
-                    pointImage.setAttribute("src", "./src/assets/images/pin-check.png")
-                    pointImage.setAttribute("alt", "Ponto acumulado")
-                    pointItem.appendChild(pointImage)
-                } else if (i === cutsNeeded && totalCuts === cutsNeeded) {
+                if (i === cutsNeeded && totalCuts === cutsNeeded) {
                     const giftImage = document.createElement("img")
                     giftImage.setAttribute("src", "./src/assets/icons/pin-gift.svg")
                     giftImage.setAttribute("alt", "Pin do presente")
                     pointItem.appendChild(giftImage)
+                } else if (i <= totalCuts) {
+                    const pointImage = document.createElement("img")
+                    pointImage.setAttribute("src", "./src/assets/images/pin-check.png")
+                    pointImage.setAttribute("alt", "Ponto acumulado")
+                    pointItem.appendChild(pointImage)
                 } else if (i === cutsNeeded) {
                     const giftImage = document.createElement("img")
                     giftImage.setAttribute("src", "./src/assets/icons/gift-default.svg")

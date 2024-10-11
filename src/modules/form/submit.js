@@ -4,6 +4,7 @@ import { cardHistory } from '../card/card-history.js'
 
 import { cardShowUser } from '../card/card-info.js'
 import { cardLoyalty } from '../card/card-loyalty.js'
+import { cardProgress } from '../card/card-progress.js'
 
 const form = document.querySelector("form")
 const idCard = document.getElementById("id-card")
@@ -26,6 +27,7 @@ form.addEventListener("submit", async (event) => {
         cardShowUser({ user: data})
         cardHistory({historys: data.appointmentHistory})
         cardLoyalty({id: data.id, loyaltyCard: data.loyaltyCard })
+        cardProgress({ loyaltyCard: data.loyaltyCard })
 
         welcomeSection.style.display = 'none'
         mainContent.style.display = 'grid'

@@ -2,13 +2,13 @@ import { toastError } from "../../utils/toast"
 
 export function cardLoyalty({ id, loyaltyCard }) {
     try {
-            const cardID = document.getElementsByClassName("card-id")
+            const cardID = document.querySelector("#card .card-info .card-id p")
             
             const cardPoints = document.querySelector(".card-points ul")
 
             cardID.innerHTML = ""
             cardPoints.innerHTML = ""
-
+            cardID.classList.add("card-id")
             cardID.innerHTML = `ID: ${id}`
 
 

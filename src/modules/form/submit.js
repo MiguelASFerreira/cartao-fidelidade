@@ -35,6 +35,7 @@ form.addEventListener("submit", async (event) => {
 
         welcomeSection.style.display = 'none'
         mainContent.style.display = 'grid'
+        idCard.value = ""
         toastSucess("Sucesso ao trazer os dados!")
     } catch (error) {
         console.log(`Error: ${error}`)

@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/styles/index.css" />
 </head>
 <body>
     <header class="header">
@@ -33,14 +32,19 @@
           </form>
     </header>
 
-    <main>
+    <section id="welcome">
+      <h1>Bem-vindo!</h1>
+      <h3>Digite seu ID para ver seu progresso</h3>
+    </section>
+
+    <main style="display: none;">
           <section id="user">
             <div class="avatar">
-                <img src="src/assets/images/picture.png" alt="Picture">
+                <img id="user-avatar" src="src/assets/images/picture.svg" alt="Picture">
             </div>
             <div class="info">
-                <h1 class="user-name">Natália Miranda</h1>
-                <span class="user-data">Cliente desde 18/09/2023</span>
+                <h1 id="user-name" class="user-name">Natália Miranda</h1>
+                <span id="user-data" class="user-data">Cliente desde 18/09/2023</span>
             </div>
         </section>
 

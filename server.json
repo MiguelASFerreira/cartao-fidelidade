@@ -7,6 +7,10 @@
             "clientSince": "18/09/2023",
             "appointmentHistory": [
                 {
+                    "date": "16/05/2024",
+                    "time": "12:30"
+                },
+                {
                     "date": "29/04/2024",
                     "time": "18:30"
                 },
@@ -72,6 +76,10 @@
             "avatar": "https://images.unsplash.com/photo-1542909193-dc7943084747?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "clientSince": "15/07/2023",
             "appointmentHistory": [
+                {
+                    "date": "29/04/2024",
+                    "time": "18:30"
+                },
                 {
                     "date": "22/04/2024",
                     "time": "16:00"

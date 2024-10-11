@@ -1,5 +1,6 @@
 import { api } from '../../services/api-config.js'
 import { toastError, toastSucess } from '../../utils/toast.js'
+import { cardHistory } from '../card/card-history.js'
 
 import { cardShowUser } from '../card/card-info.js'
 
@@ -20,8 +21,8 @@ form.addEventListener("submit", async (event) => {
         }
 
         const { data } = await api.get(`/clients/${id}`)
-
         cardShowUser({ user: data})
+        cardHistory({historys: data.appointmentHistory})
 
         welcomeSection.style.display = 'none'
         mainContent.style.display = 'grid'

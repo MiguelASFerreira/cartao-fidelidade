@@ -36,7 +36,6 @@ export function cardLoyalty({ id, loyaltyCard }) {
                 }
 
                 cardPoints.appendChild(pointItem)
-                console.log(cardPoints)
             }
     } catch (error) {
         console.log(`Error: ${error}`)

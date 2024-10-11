@@ -9,7 +9,11 @@ export function cardProgress({ loyaltyCard }) {
 
     const { totalCuts, cutsNeeded, cutsRemaining } = loyaltyCard
 
-    progressRemaining.innerHTML = `<strong>${cutsRemaining}</strong> ${cutsRemaining <= 1 ? "corte restante" : "cortes restantes"}`
+    if (totalCuts === cutsNeeded) {
+        progressRemaining.innerHTML = "Parabéns! Seu próximo corte é gratuito!"
+    } else {
+        progressRemaining.innerHTML = `<strong>${cutsRemaining}</strong> ${cutsRemaining < 1 ? "corte restante" : "cortes restantes"}`
+    }
 
     progressBarSpan.textContent = `${totalCuts} de ${cutsNeeded}`
     progressBar.max = cutsNeeded

@@ -29,11 +29,19 @@ form.addEventListener("submit", async (event) => {
         cardLoyalty({id: data.id, loyaltyCard: data.loyaltyCard })
         cardProgress({ loyaltyCard: data.loyaltyCard })
 
+        if (data.loyaltyCard.totalCuts === 10) {
+            toastSucess("Parabéns! Seu próximo corte é gratuito!")
+        }
+
         welcomeSection.style.display = 'none'
         mainContent.style.display = 'grid'
         toastSucess("Sucesso ao trazer os dados!")
     } catch (error) {
         console.log(`Error: ${error}`)
-        toastError("Erro ao trazer as informações do usuário")
+        if (error.response && error.response.status === 404) {
+            toastError("Id Inexistente. Tente Novamente!")
+        } else {
+            toastError("Erro ao trazer as informações do usuário")
+        }
     }
 })
